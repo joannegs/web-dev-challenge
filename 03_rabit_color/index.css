@@ -1,0 +1,92 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --base: #99bbff;
+  --base2: #ffccd5;
+  --base3: #808080;
+}
+
+body {
+  background: #ccccff;
+  font: 25px 'Arial', sans-serif;
+}
+
+.container {
+  display: flex;
+}
+
+.controls {
+  order: -1;
+  padding: 30px;
+}
+
+.head {
+  background: white;
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  margin: 5em;
+}
+
+.ears {
+  display: flex;
+}
+
+.ear {
+  background: white;
+  height: 7em;
+  width: 2.5em;
+  border-radius: 50%;
+  z-index: -2;
+  margin: -4em 1.2em
+}
+
+.inner-ear {
+  background: var(--base2);
+  height: 4em;
+  width: 2em;
+  border-radius: 50%;
+  z-index: 1;
+  margin: 50px 5px;
+}
+
+.eyes {
+  display: flex;
+}
+
+.eye {
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  height: 1em;
+  width: 1em;
+  background: var(--base);
+  margin: 2.5em 2em 0;
+}
+
+.pupil {
+  border-top-left-radius: 75px;
+  border-top-right-radius: 75px;
+  height: 0.5em;
+  width: 0.5em;
+  background: black;
+  margin: 0.5em 0.25em;
+}
+
+.nose {
+  height: 0.75em;
+  width: 0.75em;
+  background: var(--base3);
+  border-radius: 50%;
+  margin: 2em 4.5em;
+}
+
+.mouth {
+  height: 0.25em;
+  width: 2em;
+  background: #ffccd5;
+  border-radius: 50%;
+  margin: 2em 4em;
+}
