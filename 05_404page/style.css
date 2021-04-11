@@ -1,9 +1,5 @@
 :root{
-    --scrimbaBlue1: #E9E3FF;
-    --scrimbaBlue2: #F1F7F3;
-    --scrimbaPink: #FDDDB4;
     --scrimbaBackgroundColor: whitesmoke;
-    --scrimbaGreen: #38A169;
     --scrimbaFontColor: #2B2839; 
     --scrimbaYellow: #FFCC00;
     
@@ -14,7 +10,6 @@ body{
     background: rgb(241,222,208);
     background: linear-gradient(72deg, rgba(241,222,208,1) 5%, rgba(214,205,192,1) 23%, rgba(221,234,225,1) 53%, rgba(254,232,204,1) 71%, rgba(241,222,208,1) 90%);
 }
-
 
 .content-items {
     display: flex;
@@ -55,7 +50,6 @@ a {
     padding: 8px;
 }
 
-
 button {
     border-radius: 20px;
     border: none;
@@ -78,7 +72,7 @@ button:hover{
     height: 80%;
     width: 80%;
     margin: 8%;
-
+    overflow: auto;
 }
 
 .text-content {
@@ -92,10 +86,16 @@ button:hover{
 }
 
 .bloob{
-    position: fixed;
     z-index: -1;
-    height: 50%;
-    position: absolute
+    height: 45%;
+    position: absolute;
+
 }
 
+#bloob1, #bloob3{
+    right: 0;
+}
 
+#bloob3, #bloob4{
+    bottom: 0;
+}
